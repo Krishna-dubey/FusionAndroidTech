@@ -13,9 +13,9 @@
         android:title="A.W."
         android:icon="@drawable/ic_devices_other_black_24dp"
         app:showAsAction="always|withText"/>
-    <item android:id="@+id/location"
-        android:title="Locations"
-        android:icon="@drawable/ic_location_on_black_24dp"
+    <item android:id="@+id/videos"
+        android:title="Videos"
+        android:icon="@drawable/ic_featured_video_black_24dp"
         app:showAsAction="always|withText"/>
     <item android:id="@+id/more"
         android:title="More"
