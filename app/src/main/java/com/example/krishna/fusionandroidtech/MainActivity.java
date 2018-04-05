@@ -43,22 +43,22 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.workshops:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container4,new WorkshopFragment(),null).commit();
-                        break;
+                        return true;
                     case R.id.aw:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container4,new AwFragment(),null).commit();
-                        break;
+                        return true;
                     case R.id.videos:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container4,new VideosFragment(),null).commit();
-                        break;
+                        return true;
                     case R.id.more:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container4,new MoreFragment(),null).commit();
-                        break;
+                        return true;
                     case R.id.home:
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1,new AdvertismentFragment(),null).commit();
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container2,new AboutUsFragment(),null).commit();
-                        break;
+                        return true;
                 }
-                return true;
+                return false;
             }
         });
 
